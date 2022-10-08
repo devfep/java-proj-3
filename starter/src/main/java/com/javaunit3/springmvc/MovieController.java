@@ -11,6 +11,8 @@ import javax.persistence.NamedStoredProcedureQueries;
 
 @Controller
 public class MovieController {
+    @Autowired
+    private BestMovieService bestMovieService;
 
     @RequestMapping("/")
     public String getIndexPage(){
